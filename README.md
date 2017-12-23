@@ -1,9 +1,9 @@
 # bfcpu
-Brainf*** CPU
+Brainf*** CPU.
 # Using
-This CPU emulated with logisim program
+This CPU emulated with logisim program.
 # Architecture
-9 commands, 8 same brainf***
+9 commands, 8 same brainfuck:
 
 0      >
 
@@ -22,3 +22,10 @@ This CPU emulated with logisim program
 7      ]
 
 F   HALT
+# BF2MC
+Small program translates Brainfuck to Mashine code of this CPU.
+## Building
+`gcc -O2 -o bf2mc bf2mc.c`
+## Using
+`./bf2mc.c < file.bf > file.hex`
+Then load hex file in the CPU'S ROM.
